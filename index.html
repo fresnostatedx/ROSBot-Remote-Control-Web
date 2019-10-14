@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="https://picturepan2.github.io/spectre/dist/spectre.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--script src="js/script.js"></script-->
+        <script src="https://yoannmoi.net/nipplejs/javascripts/nipplejs.js"></script>
+        <script async src="js/joystick.js"></script>
+        <script async src="js/script.js"></script>
+        <title>BulldogBot - WebUI</title>
+    </head>
+    <body>
+        <!--div id="bgLogin" class="form-group">
+            <label class="form-label" for="txtUsername">Username</label>
+            <input class="form-input" type="text" id="txtUsername" placeholder="Username">
+            <label class="form-label" for="txtPassword">Password</label>
+            <input class="form-input" type="password" id="txtPassword" placeholder="Password">
+            <p id="bgError" class="form-input-hint">Username or passwords is wrong.</p>
+            <br>
+            <button type="button" class="btn btn-success" onclick="validate()">Login</button>
+        </div-->
+        <img id="bgCamera" alt="live video"
+            src="http://192.168.43.135:8080/stream?topic=/camera/rgb/image_raw&type=ros_compressed">
+        <!--img id="bgCamera" alt="live video" src="assets/20190702_084137.jpg"-->
+        <div id="bgControls" class="container">
+            <div id="zone_joystick"></div>
+            <div class="content">
+                <h1 id="status">BulldogBot</h1>
+                <p id="message">Control Center.</p>
+                <!-- Use a button to pause/play the video with JavaScript -->
+                <button id="btnPause">Start streaming</button>
+            </div>
+        </div>
+    </body>
+</html>
